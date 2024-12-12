@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Simple Canvas Game</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="game-container">
+    <h1>Falling Obstacles Game</h1>
+    <div class="canvas-wrapper">
+        <canvas id="gameCanvas" width="480" height="640"></canvas>
+    </div>
+    <div class="controls">
+        <p>← → 키로 좌우 이동</p>
+        <button id="startBtn">게임 시작</button>
+        <div id="gameOverPanel" class="hidden">
+            <p>게임 오버!</p>
+            <input type="text" id="playerName" placeholder="이름 입력"/>
+            <button id="submitScoreBtn">점수 제출</button>
+        </div>
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="scoreList"></ul>
+        </div>
+    </div>
+</div>
+<script src="./api.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
